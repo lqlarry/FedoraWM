@@ -221,6 +221,6 @@ bar {
 	}
 }
 
-
 exec --no-startup-id picom -f
-exec_always --no-startup-id `/.screenlayout/screen.sh
+# exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id feh --bg-scale /home/larry/Pictures/wall/SW-stormtrooper.jpg
