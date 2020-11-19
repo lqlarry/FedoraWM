@@ -185,6 +185,9 @@ bindsym $mod+r mode "resize"
 # Firefox
 assign [class="Firefox"] $ws3
 bindsym $mod+w exec firefox
+# Chromium
+assign [class="Chromium-browser"] $ws5
+bindsym $mod+c exec chromium-browser
 #Spotify
 assign [class="Spotify"] $ws4
 
@@ -221,6 +224,7 @@ bar {
 	}
 }
 
+exec_always --no-startup-id xrandr --output HDMI-1 --same-as LVDS-1 &
 exec --no-startup-id picom -f
 # exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id feh --bg-scale /home/larry/Pictures/wall/SW-stormtrooper.jpg

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+        <menu id="1" label="Development">
+            <item label="Geany"> <action name="Execute">
+                <execute>geany</execute>
+            </action> </item>
+            <item label="Python"> <action name="Execute">
+                <execute>xterm -e python</execute>
+            </action> </item>
+            <item label="Python (v2.7)"> <action name="Execute">
+                <execute>xterm -e python2.7</execute>
+            </action> </item>
+            <item label="Tclsh8.6"> <action name="Execute">
+                <execute>xterm -e tclsh8.6</execute>
+            </action> </item>
+        </menu>
+        <menu id="2" label="Editors">
+            <item label="Nano"> <action name="Execute">
+                <execute>xterm -e nano</execute>
+            </action> </item>
+            <item label="Vi"> <action name="Execute">
+                <execute>xterm -e vi</execute>
+            </action> </item>
+            <item label="Vim"> <action name="Execute">
+                <execute>xterm -e vim</execute>
+            </action> </item>
+        </menu>
+        <menu id="18" label="Games">
+            <menu id="17" label="Amusement">
+                <item label="Xclock (digital)"> <action name="Execute">
+                    <execute>xclock -digital -update 1</execute>
+                </action> </item>
+                <item label="Xeyes"> <action name="Execute">
+                    <execute>xeyes</execute>
+                </action> </item>
+            </menu>
+            <menu id="10" label="Arcade">
+                <item label="Mega Mario"> <action name="Execute">
+                    <execute>megamario</execute>
+                </action> </item>
+            </menu>
+        </menu>
+        <menu id="6" label="Graphics">
+            <item label="dotty"> <action name="Execute">
+                <execute>dotty</execute>
+            </action> </item>
+            <item label="lefty"> <action name="Execute">
+                <execute>lefty</execute>
+            </action> </item>
+            <item label="Xlock"> <action name="Execute">
+                <execute>xlock</execute>
+            </action> </item>
+        </menu>
+        <menu id="7" label="Multimedia">
+            <item label="ALSA mixer"> <action name="Execute">
+                <execute>xterm -e alsamixer</execute>
+            </action> </item>
+            <item label="mpv Media Player"> <action name="Execute">
+                <execute>mpv --player-operation-mode=pseudo-gui</execute>
+            </action> </item>
+            <item label="Spotify"> <action name="Execute">
+                <execute>bash /usr/bin/spotify</execute>
+            </action> </item>
+        </menu>
+        <menu id="5" label="Network">
+            <item label="Chromium Web Browser"> <action name="Execute">
+                <execute>chromium-browser</execute>
+            </action> </item>
+            <item label="FireFox"> <action name="Execute">
+                <execute>firefox</execute>
+            </action> </item>
+            <item label="Mail"> <action name="Execute">
+                <execute>xterm -e mail</execute>
+            </action> </item>
+            <item label="Minicom"> <action name="Execute">
+                <execute>xterm -e minicom</execute>
+            </action> </item>
+            <item label="Minicom (X11)"> <action name="Execute">
+                <execute>xminicom</execute>
+            </action> </item>
+            <item label="mtr"> <action name="Execute">
+                <execute>mtr</execute>
+            </action> </item>
+            <item label="TkVNC"> <action name="Execute">
+                <execute>xterm -e tkvnc</execute>
+            </action> </item>
+            <item label="Transmission"> <action name="Execute">
+                <execute>transmission-gtk</execute>
+            </action> </item>
+            <item label="W3m"> <action name="Execute">
+                <execute>xterm -e w3m</execute>
+            </action> </item>
+            <item label="Xbiff"> <action name="Execute">
+                <execute>xbiff</execute>
+            </action> </item>
+            <item label="Zwrite"> <action name="Execute">
+                <execute>xterm -e read -p 'Zwrite to users: ' u ; zwrite $u</execute>
+            </action> </item>
+        </menu>
+        <menu id="4" label="Science">
+            <item label="bc"> <action name="Execute">
+                <execute>xterm -e bc</execute>
+            </action> </item>
+            <item label="dc"> <action name="Execute">
+                <execute>xterm -e dc</execute>
+            </action> </item>
+        </menu>
+        <menu id="19" label="Shells">
+            <item label="File Manager PCManFM"> <action name="Execute">
+                <execute>pcmanfm</execute>
+            </action> </item>
+            <item label="GIT"> <action name="Execute">
+                <execute>xterm -e git</execute>
+            </action> </item>
+            <item label="Rxvt"> <action name="Execute">
+                <execute>rxvt</execute>
+            </action> </item>
+            <item label="rxvt-unicode"> <action name="Execute">
+                <execute>urxvt</execute>
+            </action> </item>
+            <item label="Terminator"> <action name="Execute">
+                <execute>terminator</execute>
+            </action> </item>
+            <item label="Xterm"> <action name="Execute">
+                <execute>xterm</execute>
+            </action> </item>
+            <item label="XTerm (Unicode)"> <action name="Execute">
+                <execute>uxterm</execute>
+            </action> </item>
+        </menu>
+        <menu id="37" label="System">
+            <menu id="36" label="Settings">
+                <menu id="21" label="GNOME">
+                    <item label="Advanced Network Configuration"> <action name="Execute">
+                        <execute>nm-connection-editor</execute>
+                    </action> </item>
+                </menu>
+                <item label="ARandR"> <action name="Execute">
+                    <execute>arandr</execute>
+                </action> </item>
+                <item label="Customize Look and Feel"> <action name="Execute">
+                    <execute>lxappearance</execute>
+                </action> </item>
+                <item label="Default applications for LXSession"> <action name="Execute">
+                    <execute>lxsession-default-apps</execute>
+                </action> </item>
+                <item label="Desktop Preferences"> <action name="Execute">
+                    <execute>pcmanfm --desktop-pref</execute>
+                </action> </item>
+                <item label="nitrogen"> <action name="Execute">
+                    <execute>nitrogen</execute>
+                </action> </item>
+                <item label="Openbox Configuration Manager"> <action name="Execute">
+                    <execute>obconf</execute>
+                </action> </item>
+                <item label="Preferred Applications"> <action name="Execute">
+                    <execute>libfm-pref-apps</execute>
+                </action> </item>
+                <item label="Tint2 Settings"> <action name="Execute">
+                    <execute>tint2conf</execute>
+                </action> </item>
+                <item label="Xvidtune"> <action name="Execute">
+                    <execute>xvidtune</execute>
+                </action> </item>
+            </menu>
+            <item label="chronyc"> <action name="Execute">
+                <execute>xterm -e chronyc</execute>
+            </action> </item>
+            <item label="Htop"> <action name="Execute">
+                <execute>xterm -e htop</execute>
+            </action> </item>
+            <item label="lpf - Local Package Factory"> <action name="Execute">
+                <execute>lpf update</execute>
+            </action> </item>
+            <item label="lpf spotify-client"> <action name="Execute">
+                <execute>lpf update spotify-client</execute>
+            </action> </item>
+            <item label="lpf-gui"> <action name="Execute">
+                <execute>lpf-gui</execute>
+            </action> </item>
+            <item label="lpf-notify"> <action name="Execute">
+                <execute>/usr/share/lpf/scripts/lpf-notify notify-watch /usr/share/lpf/scripts/notify</execute>
+            </action> </item>
+            <item label="pstree"> <action name="Execute">
+                <execute>xterm -e /usr/bin/pstree.x11</execute>
+            </action> </item>
+            <item label="pstree"> <action name="Execute">
+                <execute>xterm -e pstree</execute>
+            </action> </item>
+            <item label="Pstree"> <action name="Execute">
+                <execute>xterm -e pstree.x11</execute>
+            </action> </item>
+            <item label="Top"> <action name="Execute">
+                <execute>xterm -e top</execute>
+            </action> </item>
+            <item label="Xconsole"> <action name="Execute">
+                <execute>xconsole</execute>
+            </action> </item>
+            <item label="XLoad"> <action name="Execute">
+                <execute>xload</execute>
+            </action> </item>
+        </menu>
+        <menu id="38" label="Utilities">
+            <item label="compton"> <action name="Execute">
+                <execute>compton</execute>
+            </action> </item>
+            <item label="Emoji Picker"> <action name="Execute">
+                <execute>emoji-picker</execute>
+            </action> </item>
+            <item label="Help"> <action name="Execute">
+                <execute>yelp</execute>
+            </action> </item>
+            <item label="Info"> <action name="Execute">
+                <execute>xterm -e info</execute>
+            </action> </item>
+            <item label="Info Browser"> <action name="Execute">
+                <execute>xterm -e pinfo</execute>
+            </action> </item>
+            <item label="Oclock"> <action name="Execute">
+                <execute>oclock</execute>
+            </action> </item>
+            <item label="picom"> <action name="Execute">
+                <execute>picom</execute>
+            </action> </item>
+            <item label="Xclipboard"> <action name="Execute">
+                <execute>xclipboard</execute>
+            </action> </item>
+            <item label="Xclock (analog)"> <action name="Execute">
+                <execute>xclock -analog</execute>
+            </action> </item>
+            <item label="Xclock (digital)"> <action name="Execute">
+                <execute>xclock -digital</execute>
+            </action> </item>
+            <item label="Xcutsel"> <action name="Execute">
+                <execute>xcutsel</execute>
+            </action> </item>
+            <item label="Xev"> <action name="Execute">
+                <execute>xterm -e xev</execute>
+            </action> </item>
+            <item label="XFontSel"> <action name="Execute">
+                <execute>xfontsel</execute>
+            </action> </item>
+            <item label="Xkill"> <action name="Execute">
+                <execute>xkill</execute>
+            </action> </item>
+            <item label="Xlogo"> <action name="Execute">
+                <execute>xlogo</execute>
+            </action> </item>
+            <item label="Xmag"> <action name="Execute">
+                <execute>xmag</execute>
+            </action> </item>
+            <item label="Xrefresh"> <action name="Execute">
+                <execute>xrefresh</execute>
+            </action> </item>
+            <item label="Xsetroot"> <action name="Execute">
+                <execute>xsetroot</execute>
+            </action> </item>
+        </menu>
+        <separator/>
+        <menu id="40" label="OpenBox">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+            <separator/>
+            <item label="Exit"> <action name="Exit"/> </item>
+        </menu>
+    </menu>
+</openbox_menu>
