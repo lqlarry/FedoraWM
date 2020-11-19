@@ -1,2 +1,0 @@
-
-//# sourceMappingURL=background.js.map

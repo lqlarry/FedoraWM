@@ -1,7 +1,0 @@
-Doiron
-Kayte
-LQLarry
-Manjaro
-Marsons
-Quinta
-checksum_v1 = b7bf53fe0884dd60d1eff47628423751
