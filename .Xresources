@@ -3,11 +3,11 @@ URxvt*scrollWithBuffer: true
 URxvt.scrollBar: false
 
 ! font for URxvt
-URxvt.font: xft:terminus-medium:size=14
+URxvt.font: xft:terminus-medium:size=14:antialias=true
 
 !Transparency
 URxvt.depth: 32
-URxvt.background: [95]#2b303b
+URxvt.background: [75]#2b303b
 
 ! special
 *.foreground:   #c0c5ce
@@ -50,7 +50,6 @@ URxvt.background: [95]#2b303b
 URxvt.perl-ext-common:  clipboard
 
 ! URxvt.clipboard.autocopy: true
-! URxvt.keysym.M-c: perl:clipboard:copy
-! URxvt.keysym.M-v: perl:clipboard:paste
-
+! URxvt.keysym.Shift-Control-c: perl:clipboard:copy
+! URxvt.keysym.Shift-Control-v: perl:clipboard:paste
 

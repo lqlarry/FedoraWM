@@ -1,0 +1,24 @@
+{
+   "description": "Arc-Dark theme for Chrome/Chromium",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnPmDuibyalaOMgTwk1YTcnJm6ogq6V7VhAKBaRkj2anpte320lryee77ouTrC3hSaZ5yqhGXm2D/DjenDdBVKQN5TqhVPh89muo7yztFQdRp7KDcOW8J+5zWVgmBAwJVeNkPHE1dcbw2dxXxI+cMCxdYJ4vtBBSx2zL/QIm61clA6u4ljpDcqRFc5Y9c+nYUKrkbwIryZwvGIgukUi7u3wY6vcCKA9VbEtdMo8Vk7N0dLhUh1L1cpWfdwqbF8LBnU99PP9oY4qVBLaRO8eucscfevhbQdAYf/28NnDVY9qZ4jWrCeV+OgghL9FFrqZB2BzU66NeGWXrdri1zNn9JVwIDAQAB",
+   "manifest_version": 2,
+   "name": "Arc Dark",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 238, 238, 238 ],
+         "frame": [ 47, 52, 63 ],
+         "frame_inactive": [ 37, 42, 50 ],
+         "frame_incognito": [ 47, 52, 63 ],
+         "frame_incognito_inactive": [ 37, 42, 50 ],
+         "ntp_background": [ 64, 69, 82 ],
+         "tab_background_text": [ 190, 190, 190 ],
+         "tab_text": [ 238, 238, 238 ],
+         "toolbar": [ 47, 52, 63 ]
+      },
+      "tints": {
+         "background_tab": [ -1, -1, 0.4 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}

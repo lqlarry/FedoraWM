@@ -1,0 +1,24 @@
+2020/11/28-10:15:18.215 7b39 Reusing MANIFEST /home/larry/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2020/11/28-10:15:18.216 7b39 Recovering log #10
+2020/11/28-10:15:18.292 7b39 Level-0 table #13: started
+2020/11/28-10:15:18.427 7b39 Level-0 table #13: 3011374 bytes OK
+2020/11/28-10:15:18.694 7b39 Delete type=0 #10
+2020/11/28-10:28:25.654 7f23 Level-0 table #16: started
+2020/11/28-10:28:25.700 7f23 Level-0 table #16: 1874466 bytes OK
+2020/11/28-10:28:25.704 7f23 Delete type=0 #14
+2020/11/28-10:28:25.706 83bc Compacting 4@0 + 1@1 files
+2020/11/28-10:28:25.792 83bc Generated table #17@0: 16 keys, 2807585 bytes
+2020/11/28-10:28:25.855 83bc Generated table #18@0: 20 keys, 1054230 bytes
+2020/11/28-10:28:25.856 83bc Compacted 4@0 + 1@1 files => 3861815 bytes
+2020/11/28-10:28:25.860 83bc compacted to: files[ 0 2 1 0 0 0 0 ]
+2020/11/28-10:28:25.861 83bc Delete type=2 #7
+2020/11/28-10:28:25.861 83bc Delete type=2 #9
+2020/11/28-10:28:25.861 83bc Delete type=2 #11
+2020/11/28-10:28:25.861 83bc Delete type=2 #13
+2020/11/28-10:28:25.861 83bc Delete type=2 #16
+2020/11/28-10:32:26.897 83bc Level-0 table #20: started
+2020/11/28-10:32:26.956 83bc Level-0 table #20: 1556793 bytes OK
+2020/11/28-10:32:26.963 83bc Delete type=0 #15
+2020/11/28-10:37:29.548 83bc Level-0 table #22: started
+2020/11/28-10:37:29.661 83bc Level-0 table #22: 2923933 bytes OK
+2020/11/28-10:37:29.665 83bc Delete type=0 #19

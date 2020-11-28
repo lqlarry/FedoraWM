@@ -19,5 +19,8 @@ export PATH
 
 alias v="vim"
 alias screen="xrandr --output HDMI-1 --same-as LVDS-1"
+alias xrdb="xrdb -load ~/.Xresources"
+alias xprop="xprop | grep WM_CLASS"
+alias yt="youtube-dl"
 
 neofetch

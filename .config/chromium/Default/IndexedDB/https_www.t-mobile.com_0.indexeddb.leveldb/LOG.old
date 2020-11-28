@@ -1,0 +1,5 @@
+2020/11/18-18:27:57.301 734b Reusing MANIFEST /home/larry/.config/chromium/Default/IndexedDB/https_www.t-mobile.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/11/18-18:30:00.153 734a Level-0 table #5: started
+2020/11/18-18:30:00.158 734a Level-0 table #5: 3847 bytes OK
+2020/11/18-18:30:00.161 734a Delete type=0 #3
+2020/11/18-18:30:00.162 734a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

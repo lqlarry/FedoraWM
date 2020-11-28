@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=File System for Dropbox
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hlffpaajmfllggclnjppbblobdhokjhe
+Icon=chrome-hlffpaajmfllggclnjppbblobdhokjhe-Default
+StartupWMClass=crx_hlffpaajmfllggclnjppbblobdhokjhe

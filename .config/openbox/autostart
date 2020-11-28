@@ -17,6 +17,8 @@
 #xfce-mcs-manager &
 
 xrandr --output HDMI-1 --same-as LVDS-1 &
+xset s off &
+xset dpms 60000 60000 60000 &
 tint2 &
 picom -f &
-~/.fehbg &
+feh --bg-scale /home/larry/Pictures/wall ~/Pictures/wall/SW-stormtrooper.jpg &

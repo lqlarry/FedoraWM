@@ -1,0 +1,5 @@
+2020/11/23-19:53:51.337 2009f Reusing MANIFEST /home/larry/.config/google-chrome/Default/IndexedDB/https_www.hulu.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/11/23-19:54:23.610 200a0 Level-0 table #5: started
+2020/11/23-19:54:23.614 200a0 Level-0 table #5: 1657 bytes OK
+2020/11/23-19:54:23.617 200a0 Delete type=0 #3
+2020/11/23-19:54:23.617 200a0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,5 @@
+2020/11/19-02:19:39.853 db4 Reusing MANIFEST /home/larry/.config/chromium/Default/IndexedDB/https_discourse.destinationlinux.network_0.indexeddb.leveldb/MANIFEST-000001
+2020/11/19-02:24:36.385 e07 Level-0 table #5: started
+2020/11/19-02:24:36.397 e07 Level-0 table #5: 72827 bytes OK
+2020/11/19-02:24:36.401 e07 Delete type=0 #3
+2020/11/19-02:24:36.402 e07 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

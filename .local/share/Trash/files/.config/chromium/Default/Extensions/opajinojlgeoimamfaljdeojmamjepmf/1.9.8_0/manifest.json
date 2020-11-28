@@ -1,0 +1,21 @@
+{
+   "author": "Pedro Lucas Oliveira",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "dark.css" ],
+      "matches": [ "*://news.google.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Makes the layout of Google News dark while retaining the original feel.",
+   "icons": {
+      "64": "icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu+JZ9HoSVGVcI/xGMrkmrnAzcwNQNk1Tt5Bu2wG19TH5/5vCxMSh0WZwjygj36XxJAR1s/QQ7lulNpQUORQgZn/xn5aVBq1228aa3cMufMWfC94C5hBDY/ZXRuOMZGoegOyAEjsropav6NaUGTZV5R6+tFWHImUl61nvoBN6aiwrLKdE7Ocp/tVXmEQwzloT2zUEVSaqN++4fetTT/ydojvaYJ630xDb6PCKFkSGqFDRFXcb6obBUUAUzPuGhq887RkBrRVC57qIDMPMTOvQ45Xuc5dkWMu6xYc4kaaIbe0Q7j0K4HePh6hyrWgFhR2W+EiujW0llZKSHA7JWon0HwIDAQAB",
+   "manifest_version": 2,
+   "name": "Dark Theme for Google News",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.9.8"
+}

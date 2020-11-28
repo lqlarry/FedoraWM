@@ -19,6 +19,9 @@
             <item label="Nano"> <action name="Execute">
                 <execute>xterm -e nano</execute>
             </action> </item>
+            <item label="Openoffice.org Writer"> <action name="Execute">
+                <execute>oowriter</execute>
+            </action> </item>
             <item label="Vi"> <action name="Execute">
                 <execute>xterm -e vi</execute>
             </action> </item>
@@ -40,13 +43,41 @@
                     <execute>megamario</execute>
                 </action> </item>
             </menu>
+            <menu id="11" label="Board">
+                <item label="Mahjongg"> <action name="Execute">
+                    <execute>gnome-mahjongg</execute>
+                </action> </item>
+            </menu>
+            <menu id="12" label="Card">
+                <item label="PySol Fan Club Edition"> <action name="Execute">
+                    <execute>pysol</execute>
+                </action> </item>
+            </menu>
         </menu>
         <menu id="6" label="Graphics">
             <item label="dotty"> <action name="Execute">
                 <execute>dotty</execute>
             </action> </item>
+            <item label="Flameshot"> <action name="Execute">
+                <execute>flameshot</execute>
+            </action> </item>
+            <item label="GNU Image Manipulation Program"> <action name="Execute">
+                <execute>gimp-2.10</execute>
+            </action> </item>
+            <item label="Inkscape"> <action name="Execute">
+                <execute>inkscape</execute>
+            </action> </item>
             <item label="lefty"> <action name="Execute">
                 <execute>lefty</execute>
+            </action> </item>
+            <item label="LibreOffice Draw"> <action name="Execute">
+                <execute>libreoffice --draw</execute>
+            </action> </item>
+            <item label="Openoffice.org Draw"> <action name="Execute">
+                <execute>oodraw</execute>
+            </action> </item>
+            <item label="The GIMP"> <action name="Execute">
+                <execute>gimp</execute>
             </action> </item>
             <item label="Xlock"> <action name="Execute">
                 <execute>xlock</execute>
@@ -59,6 +90,9 @@
             <item label="mpv Media Player"> <action name="Execute">
                 <execute>mpv --player-operation-mode=pseudo-gui</execute>
             </action> </item>
+            <item label="PulseAudio Volume Control"> <action name="Execute">
+                <execute>pavucontrol</execute>
+            </action> </item>
             <item label="Spotify"> <action name="Execute">
                 <execute>bash /usr/bin/spotify</execute>
             </action> </item>
@@ -69,6 +103,9 @@
             </action> </item>
             <item label="FireFox"> <action name="Execute">
                 <execute>firefox</execute>
+            </action> </item>
+            <item label="Google Chrome"> <action name="Execute">
+                <execute>google-chrome-stable</execute>
             </action> </item>
             <item label="Mail"> <action name="Execute">
                 <execute>xterm -e mail</execute>
@@ -96,6 +133,32 @@
             </action> </item>
             <item label="Zwrite"> <action name="Execute">
                 <execute>xterm -e read -p 'Zwrite to users: ' u ; zwrite $u</execute>
+            </action> </item>
+        </menu>
+        <menu id="3" label="Office">
+            <item label="LibreOffice Calc"> <action name="Execute">
+                <execute>libreoffice --calc</execute>
+            </action> </item>
+            <item label="LibreOffice Impress"> <action name="Execute">
+                <execute>libreoffice</execute>
+            </action> </item>
+            <item label="LibreOffice Impress"> <action name="Execute">
+                <execute>libreoffice --impress</execute>
+            </action> </item>
+            <item label="LibreOffice Math"> <action name="Execute">
+                <execute>libreoffice --math</execute>
+            </action> </item>
+            <item label="LibreOffice Writer"> <action name="Execute">
+                <execute>libreoffice --writer</execute>
+            </action> </item>
+            <item label="Openoffice.org Calc"> <action name="Execute">
+                <execute>oocalc</execute>
+            </action> </item>
+            <item label="Openoffice.org Impress"> <action name="Execute">
+                <execute>ooimpress</execute>
+            </action> </item>
+            <item label="Openoffice.org Math"> <action name="Execute">
+                <execute>oomath</execute>
             </action> </item>
         </menu>
         <menu id="4" label="Science">
@@ -135,6 +198,9 @@
                     <item label="Advanced Network Configuration"> <action name="Execute">
                         <execute>nm-connection-editor</execute>
                     </action> </item>
+                    <item label="Login Window"> <action name="Execute">
+                        <execute>pkexec lightdm-settings</execute>
+                    </action> </item>
                 </menu>
                 <item label="ARandR"> <action name="Execute">
                     <execute>arandr</execute>
@@ -150,6 +216,9 @@
                 </action> </item>
                 <item label="nitrogen"> <action name="Execute">
                     <execute>nitrogen</execute>
+                </action> </item>
+                <item label="Onboard Settings"> <action name="Execute">
+                    <execute>onboard-settings</execute>
                 </action> </item>
                 <item label="Openbox Configuration Manager"> <action name="Execute">
                     <execute>obconf</execute>
@@ -219,6 +288,9 @@
             </action> </item>
             <item label="Oclock"> <action name="Execute">
                 <execute>oclock</execute>
+            </action> </item>
+            <item label="Onboard"> <action name="Execute">
+                <execute>onboard</execute>
             </action> </item>
             <item label="picom"> <action name="Execute">
                 <execute>picom</execute>

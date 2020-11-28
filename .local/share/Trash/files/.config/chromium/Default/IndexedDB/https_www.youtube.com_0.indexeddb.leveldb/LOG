@@ -1,0 +1,15 @@
+2020/11/19-03:33:10.830 1a68 Reusing MANIFEST /home/larry/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/11/19-03:33:10.830 1a68 Recovering log #34
+2020/11/19-03:33:10.830 1a68 Reusing old log /home/larry/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000034.log 
+2020/11/19-03:33:59.315 1a69 Level-0 table #39: started
+2020/11/19-03:33:59.320 1a69 Level-0 table #39: 1001 bytes OK
+2020/11/19-03:33:59.324 1a69 Delete type=0 #34
+2020/11/19-03:33:59.325 1a69 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/11/19-03:33:59.325 1a69 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x01\x13\x00T\x00i\x00m\x00e\x00s\x00t\x00a\x00m\x00p\x00L\x00o\x00w\x00e\x00r\x00B\x00o\x00u\x00n\x00d' @ 1355 : 1
+2020/11/19-03:33:59.325 1a69 Compacting 1@1 + 1@2 files
+2020/11/19-03:33:59.327 1a69 Generated table #40@1: 64 keys, 2575 bytes
+2020/11/19-03:33:59.327 1a69 Compacted 1@1 + 1@2 files => 2575 bytes
+2020/11/19-03:33:59.347 1a69 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/11/19-03:33:59.347 1a69 Delete type=2 #36
+2020/11/19-03:33:59.347 1a69 Delete type=2 #39
+2020/11/19-03:33:59.348 1a69 Manual compaction at level-1 from '\x00\x03\x01\x02\x01\x13\x00T\x00i\x00m\x00e\x00s\x00t\x00a\x00m\x00p\x00L\x00o\x00w\x00e\x00r\x00B\x00o\x00u\x00n\x00d' @ 1355 : 1 .. (end); will stop at (end)

@@ -1,0 +1,16 @@
+{
+   "author": "Esteban Santiesteban",
+   "description": "Monokai color scheme for Chrome dev tools.",
+   "devtools_page": "devtools.html",
+   "homepage_url": "https://github.com/estebansanti/chrome-devtools-monokai",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqM4jJAcvIMqiWGb7ksoXNqWRUL50z4hlTDpjOg6tgsZh2i+0W4UuNVlPzU7Wm/g86MbVxSpQxUoMM40W57qcu5WSIzbP4vjeEaW/0GIrifyKXFOFFuW1tPPE7yE6Zb6pPy+k+q0y3CyF8/GuvVYuksad863JwtdpwwKfDKyQ2ZkvZFPT8wVHJGYA8i4SL/iVj27VIvy84LRGK+abeHxWm5zI+2CxqYXV/gT+mevOc5ngrfbrrxRsswYyGUs9Fq4OhsAlr2gS5lA6ITeO78Nd2rKmv6JAxBvMkadmIGHvR8qv9JeEzQm8dvoJUryMx25y5mjM4tK8Fm+Zq5adSAhnwwIDAQAB",
+   "manifest_version": 2,
+   "name": "Monokai for Chrome",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

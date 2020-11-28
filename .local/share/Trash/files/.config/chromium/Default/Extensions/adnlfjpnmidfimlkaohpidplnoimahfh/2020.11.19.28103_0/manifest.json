@@ -1,0 +1,39 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#FF0000",
+      "launch": {
+         "web_url": "https://www.youtube.com/"
+      },
+      "linked_icons": [ {
+         "size": 0,
+         "url": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico"
+      }, {
+         "size": 32,
+         "url": "https://s.ytimg.com/yts/img/favicon_32-vflOogEID.png"
+      }, {
+         "size": 48,
+         "url": "https://s.ytimg.com/yts/img/favicon_48-vflVjB_Qk.png"
+      }, {
+         "size": 96,
+         "url": "https://s.ytimg.com/yts/img/favicon_96-vflW9Ec0w.png"
+      }, {
+         "size": 144,
+         "url": "https://s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png"
+      } ]
+   },
+   "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+   "icons": {
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "264tAgSqSJ4jTrL5A6ASexfHEjhkKMqxK4bF9oqnWGc=",
+   "name": "YouTube",
+   "version": "2020.11.19.28103"
+}

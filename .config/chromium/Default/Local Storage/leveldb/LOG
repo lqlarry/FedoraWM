@@ -1,0 +1,5 @@
+2020/11/19-00:00:57.373 3fcb4 Reusing MANIFEST /home/larry/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2020/11/19-00:00:57.374 3fcb4 Recovering log #4
+2020/11/19-00:00:57.374 3fcb4 Level-0 table #7: started
+2020/11/19-00:00:57.383 3fcb4 Level-0 table #7: 20444 bytes OK
+2020/11/19-00:00:57.433 3fcb4 Delete type=0 #4

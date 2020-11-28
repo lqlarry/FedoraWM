@@ -1,0 +1,312 @@
+<!-- @copyright CreatorMars4 2020  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="libs/materialize/material.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+ </head>
+<body style="">
+<div id="myEqualizer" class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col" id="left">
+
+            <div class=" Equalizer Equalizer-ruler Equalizer-v " style="width: 380px !important; margin-left: 30px">
+                <input id="volume" class="mdl-slider mdl-js-slider" type="range" min="0" max="4" step="0.01"/>
+            </div>
+
+            <label for="volume" style="margin-top: 45px" translate="Volume"></label>
+
+            <button id="power" class="off mdl-button mdl-js-button mdl-button--raised" translate="powerOff"></button>
+        </div>
+
+
+        <div class="mdl-cell mdl-cell--10-col" id="eq">
+            <div class="mdl-grid" id="eq_div">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div id="title" class="title" style="font-weight: bolder;"></div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--12-col">
+                    <label class="mdl-radio mdl-js-radio" for="limiterRadio">
+                        <input type="radio" id="limiterRadio" name="modules"
+                               class="mdl-radio__button">
+                        <span class="mdl-radio__label" id="limiterTitle" datatype="i18n" translate="TabLimiter"></span>
+                    </label>
+
+
+                    <label class="mdl-radio mdl-js-radio" for="eqRadio">
+                        <input type="radio" id="eqRadio" name="modules"
+                               class="mdl-radio__button">
+                        <span class="mdl-radio__label" id="eqTitle" datatype="i18n" translate="TabEqualizer"></span>
+                    </label>
+
+                    <label class="mdl-radio mdl-js-radio" for="pitchRadio">
+                        <input type="radio" id="pitchRadio" name="modules"
+                               class="mdl-radio__button">
+                        <span class="mdl-radio__label" id="pitchTitle" datatype="i18n" translate="TabPitch"></span>
+                    </label>
+
+                    <label class="mdl-radio mdl-js-radio" for="convolverRadio">
+                        <input type="radio" id="convolverRadio" name="modules"
+                               class="mdl-radio__button">
+                        <span class="mdl-radio__label" id="convolverTitle" datatype="i18n" translate="TabConvolver" ></span>
+                    </label>
+
+
+                    <label class="mdl-radio mdl-js-radio" for="chorusRadio">
+                        <input type="radio" id="chorusRadio" name="modules"
+                               class="mdl-radio__button">
+                        <span class="mdl-radio__label" id="chorusTitle" datatype="i18n" translate="TabChorus"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mdl-grid" id="equalizerTab">
+                <div class="chorus Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="chorusRateVal" class="EqualizerVal">0.9</label>
+                    <input id="chorusRate" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="0"
+                           max="1" step="0.01"/>
+                    <label id="chorusRateLabel" for="chorusRate" translate="chorusRate"></label>
+                </div>
+                <div class="chorus Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="chorusDepthVal" class="EqualizerVal">0.04</label>
+                    <input id="chorusDepth" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="0"
+                           max="1" step="0.01"/>
+                    <label id="chorusDepthLabel" for="chorusDepth" translate="chorusDepth"></label>
+                </div>
+                <div class="chorus Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="chorusFeedbackVal" class="EqualizerVal">0.9</label>
+                    <input id="chorusFeedback" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="0"
+                           max="0.95" step="0.01"/>
+                    <label id="chorusFeedbackLabel" for="chorusFeedback" translate="chorusFeedback"></label>
+                </div>
+                <div class="chorus Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="chorusDelayVal" class="EqualizerVal">1.55</label>
+                    <input id="chorusDelay" class="high  mdl-slider mdl-js-slider is-upgraded" type="range" min="0"
+                           max="2" step="0.01"/>
+                    <label id="chorusDelayLabel" for="chorusDelay" translate="chorusDelay"></label>
+                </div>
+                <div class="convolver Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="convolverHighcutVal" class="EqualizerVal">11317</label>
+                    <input id="convolverHighcut" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="20" max="22050" step="1"/>
+                    <label id="convolverHighcutLabel" for="convolverHighcut" translate="convolverHighcut"></label>
+                </div>
+                <div class="convolver Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="convolverLowcutVal" class="EqualizerVal">11317</label>
+                    <input id="convolverLowcut" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="20"
+                           max="22050" step="1"/>
+                    <label id="convolverLowcutLabel" for="convolverLowcut" translate="convolverLowcut"></label>
+                </div>
+                <div class="convolver Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="convolverDryLevelVal" class="EqualizerVal">0.5</label>
+                    <input id="convolverDryLevel" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="0"
+                           max="1" step="0.01"/>
+                    <label id="convolverDryLevelLabel" for="convolverDryLevel" translate="convolverDry"></label>
+                </div>
+                <div class="convolver Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="convolverWetLevelVal" class="EqualizerVal">0.5</label>
+                    <input id="convolverWetLevel" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="0"
+                           max="1" step="0.01"/>
+                    <label id="convolverWetLevelLabel" for="convolverWetLevel" translate="convolverWet"></label>
+                </div>
+                <div class="pitch Equalizer Equalizer-ruler Equalizer-v Equalizer-cyan mdl-cell mdl-cell--1-col">
+                    <label id="pitchVal" class="EqualizerVal">0.0</label>
+                    <input id="pitch" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="-10" max="10"
+                           step="0.01"/>
+                    <label id="pitchLabel" for="pitch" translate="labelPitch"></label>
+                </div>
+                <div class="dynamics Equalizer Equalizer-ruler Equalizer-v Equalizer-green mdl-cell mdl-cell--1-col">
+                    <label id="thresholdVal" class="EqualizerVal"></label>
+                    <input id="threshold" class="high mdl-slider mdl-js-slider is-upgraded" type="range" min="-100" max="0"/>
+                    <label id="thresholdLabel" for="threshold" translate="thresholdLabel"></label>
+                </div>
+                <div class="advanced Equalizer Equalizer-ruler Equalizer-v Equalizer-green  mdl-cell mdl-cell--1-col">
+                    <label id="attackVal" class="EqualizerVal">10.0</label>
+                    <input id="attack" class="short mdl-slider mdl-js-slider is-upgraded" type="range" min="0" max="1"
+                           step="0.01"/>
+                    <label id="attackLabel" for="attack" datatype="i18n" translate="attackLabel"></label>
+                </div>
+                <div class="advanced Equalizer Equalizer-ruler Equalizer-v Equalizer-green  mdl-cell mdl-cell--1-col">
+                    <label id="releaseVal" class="EqualizerVal">1.01</label>
+                    <input id="release" class="short mdl-slider mdl-js-slider is-upgraded" type="range" min="0.01"
+                           max="1" step="0.01"/>
+                    <label id="releaseLabel" for="release" datatype="i18n" translate="releaseLabel"></label>
+                </div>
+                <div class="advanced Equalizer Equalizer-ruler Equalizer-v Equalizer-green  mdl-cell mdl-cell--1-col">
+                    <label id="ratioVal" class="EqualizerVal">5.5</label>
+                    <input id="ratio" class="short mdl-slider mdl-js-slider is-upgraded" type="range" min="1" max="20"
+                           step="0.2"/>
+                    <label id="ratioLabel" for="ratio" datatype="i18n" translate="ratioLabel"></label>
+                </div>
+                <div class="advanced Equalizer Equalizer-ruler Equalizer-v Equalizer-green  mdl-cell mdl-cell--1-col">
+                    <label id="kneeVal" class="EqualizerVal">10</label>
+                    <input id="knee" class="short mdl-slider mdl-js-slider is-upgraded" type="range" min="0" max="40"
+                           step="0.4"/>
+                    <label id="kneeLabel" for="knee"translate="kneeLabel"></label>
+                </div>
+
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_32" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40" max="40">
+                    <label for="eq_32">32</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_64" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40" max="40">
+                    <label for="eq_64">64</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_125" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40"
+                           max="40">
+                    <label for="eq_125">125</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_250" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40"
+                           max="40">
+                    <label for="eq_250">250</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_500" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40"
+                           max="40">
+                    <label for="eq_500">500</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_1000" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40"
+                           max="40">
+                    <label for="eq_1000">1k</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_2k" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40" max="40">
+                    <label for="eq_2k">2k</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_4k" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40" max="40">
+                    <label for="eq_4k">4k</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_8k" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40" max="40">
+                    <label for="eq_8k">8k</label>
+                </div>
+                <div class="eq Equalizer Equalizer-ruler Equalizer-v Equalizer-orange mdl-cell mdl-cell--1-col">
+                    <input id="eq_16k" type="range" class="high mdl-slider mdl-js-slider is-upgraded" min="-40"
+                           max="40">
+                    <label for="eq_16k">16k</label>
+                </div>
+            </div>
+
+            <div class="mdl-grid" id="fElements">
+
+                <div class="mdl-cell mdl-cell--12-col options-bar options-bar" id="bottom">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="pPreset">
+                        <select id="presets" class="mdl-textfield__input">
+                            <option id="acoustic" value="acoustic" translate="presetAcoustic"></option>
+                            <option id="bassBooster" value="bassBooster" translate="presetBassBooster"></option>
+                            <option id="bassReducer" value="bassReducer" translate="presetBassReducer"></option>
+                            <option id="classical" value="classical" translate="presetClassical"></option>
+                            <option id="dance" value="dance" translate="presetDance"></option>
+                            <option id="deep" value="deep" translate="presetDeep"></option>
+                            <option id="electronic" value="electronic" translate="presetElectronic"></option>
+                            <option id="hiphop" value="hiphop" translate="presetHipHop"></option>
+                            <option id="jazz" value="jazz" translate="presetJazz"></option>
+                            <option id="latin" value="latin" translate="presetLatin"></option>
+                            <option id="loudness" value="loudness" translate="presetLoudness"></option>
+                            <option id="lounge" value="lounge" translate="presetLounge"></option>
+                            <option id="piano" value="piano" translate="presetPiano"></option>
+                            <option id="pop" value="pop" translate="presetPop"></option>
+                            <option id="rnb" value="rnb" translate="presetRnb"></option>
+                            <option id="rock" value="rock" translate="presetRock"></option>
+                            <option id="smallSpeakers" value="smallSpeakers" translate="presetSmallSpeakers"></option>
+                            <option id="spokenWord" value="spokenWord" translate="presetSpokenWord"></option>
+                            <option id="trebleBooster" value="trebleBooster" translate="presetTrebleBooster"></option>
+                            <option id="trebleReducer" value="trebleReducer" translate="presetTrebleReducer"></option>
+                            <option id="vocalBooster" value="vocalBooster" translate="presetVocalBooster"></option>
+                        </select>
+                    </div>
+
+
+                    <button id="bypass" class="fg-green mdl-button mdl-js-button mdl-button--raised"
+                            translate="buttonBypass">
+                    </button>
+
+                    <button id="buttonReset" class="mdl-button mdl-js-button mdl-button--raised"
+                            translate="buttonReset">
+
+                    </button>
+                    <button id="advancedLabel" class="mdl-button mdl-js-button mdl-button--raised"
+                            translate="buttonAdvanced">
+                    </button>
+                    <button id="buttonSavePreset" class="flex-right mdl-button mdl-js-button mdl-button--raised"
+                            translate="buttonSave">
+                    </button>
+                    <button id="buttonLoadPreset"
+                            class="flex-right fg-green mdl-button mdl-js-button mdl-button--raised"
+                            translate="buttonLoad"
+                            style="display: none">
+                    </button>
+                    <button id="delete" class="typcn-delete mdl-button mdl-js-button mdl-button--raised"
+                            translate="buttonDelete">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--10-col channelModal "
+             id="modalOff"
+             style="width: 650px !important;">
+
+            <div class="" style="height: 60px;padding-left: 15px;padding-top: 10px;border-bottom: 1px solid silver;">
+                <p id="modalTitle"></p>
+            </div>
+            <div style="padding-left: 15px; padding-top: 10px; padding-bottom: 15px; height: 170px !important;">
+                <p style="text-align: center">
+                 <span id="modalBody"></span>
+                </p>
+
+                <p style="text-align: center">
+                    <button id="powerIcon" class="mdl-button mdl-js-button mdl-button--raised"
+                    translate="buttonTextPowerIcon"
+                            title=""
+                    >
+                </button>
+                </p>
+            </div>
+
+            <div class="row" style="padding: 10px; text-align: right">
+                <button id="gotoTab"
+                        class="mdl-button mdl-js-button mdl-button--raised"
+                        translate="buttonGotoTab"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="libs/materialize/material.js"></script>
+<script src="libs/jquery.js"></script>
+<script src="js/Core.js"></script>
+<script src="js/core/TabHandlers/TabHandler.js"></script>
+<script src="js/core/TabHandlers/Chorus.js"></script>
+<script src="js/core/TabHandlers/Convolver.js"></script>
+<script src="js/core/TabHandlers/Equalizer.js"></script>
+<script src="js/core/TabHandlers/Limiter.js"></script>
+<script src="js/core/TabHandlers/Pitch.js"></script>
+
+<script src="js/core/Tabs.js"></script>
+
+<script src="js/core/module/Module.js"></script>
+<script src="js/core/module/Bypass.js"></script>
+<script src="js/core/module/Mono.js"></script>
+<script src="js/core/module/Power.js"></script>
+<script src="js/core/module/Preset.js"></script>
+<script src="js/core/module/Reset.js"></script>
+
+<script src="js/core/Instance.js"></script>
+<script src="js/core/Localize.js"></script>
+<script src="js/core/Popup.js"></script>
+
+
+<script src="js/popup/sliders.js"></script>
+
+</body>
+</html>
